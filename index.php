@@ -4,20 +4,20 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
+    <script>
+  (function() {
+    var cx = '017305337282449250408:jxmfygjffvs';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
     <div class="container spacetop">
-    <?php  require_once('google-api-php-client-2.2.1/vendor/autoload.php');
-      $client = new Google_Client();
-      $client->setApplicationName("Client_Library_Examples");
-      $client->setDeveloperKey("AIzaSyD4ePQSrWHZCsVRfuf1goOPgzFB9gJbhMM");
 
-      $service = new Google_Service_Books($client);
-      $optParams = array('filter' => 'free-ebooks');
-      $results = $service->volumes->listVolumes('Henry David Thoreau', $optParams);
-
-      foreach ($results as $item) {
-        echo $item['volumeInfo']['title'], "<br /> \n";
-      }
-    ?>
         <div class="row">
             <div class="col-md-10">
                 <form class="col-md-5" action="index.php" method="post">
