@@ -1,7 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
     <script>
@@ -16,6 +17,15 @@
   })();
 </script>
 <gcse:search></gcse:search>
+  <script type="text/javascript">
+      var key = "AIzaSyD4ePQSrWHZCsVRfuf1goOPgzFB9gJbhMM";
+      var engine = "017305337282449250408:jxmfygjffvs";
+      var request = $.ajax({
+              url: "https://www.googleapis.com/customsearch/v1?key="+key+"&cx="+engine+"&q=teste",
+              type: 'get'
+      });
+      console.log(request);
+</script>
     <div class="container spacetop">
 
         <div class="row">
@@ -30,5 +40,6 @@
             </div>
         </div>
     </div>
+
     </body>
 </html>
