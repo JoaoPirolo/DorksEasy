@@ -21,7 +21,8 @@
       var key = "AIzaSyD4ePQSrWHZCsVRfuf1goOPgzFB9gJbhMM";
       var engine = "017305337282449250408:jxmfygjffvs";
       var request = $.ajax({
-              url: "https://www.googleapis.com/customsearch/v1?key="+key+"&cx="+engine+"&q=teste",
+              dataType: 'json',
+              url: "https://www.googleapis.com/customsearch/v1?key="+key+"&cx="+engine+"&q=esquilo",
               type: 'get'
       });
       console.log(request);
